@@ -1,9 +1,7 @@
 package au.com.companyadvice
 
-class User {
+class User extends SecUser {
 
-	String username
-	String password
 	String email
 	String website
 	Company currentCompany
@@ -12,7 +10,7 @@ class User {
 
 
     static constraints = {
-    	username blank:false, size: 4..50
+    	username blank:false, size: 4..50, unique: true
     	password blank:false, size: 6 .. 50
     	email blank:false, email:true
     	website url:true

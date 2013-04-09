@@ -109,6 +109,10 @@
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
+			<sec:ifNotLoggedIn>
+  					<g:link controller="login" action="auth">Login</g:link>
+			</sec:ifNotLoggedIn>
+
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>
