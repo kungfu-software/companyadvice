@@ -6,6 +6,8 @@ class Comment {
 	String cons
 	String advice
 
+	
+	// do some test
 	boolean isApproved = true
 
     static constraints = {
@@ -13,4 +15,6 @@ class Comment {
     	pros blank:false, size: 20 .. 2000
     	cons blank:false, size: 20 .. 2000
     }
+	
+	
 }
